@@ -21,9 +21,5 @@ dependencies {
 
 ## :fast_forward: Import SDK
 ```
-import io.wepin.widget.types.Wepin;
-import io.wepin.widget.types.Account;
-import io.wepin.widget.types.WepinErrorListener;
-import io.wepin.widget.types.WepinOptions;
-import io.wepin.widget.types.WidgetAttributes;
+import io.wepin.widget.types.*;
 ```
