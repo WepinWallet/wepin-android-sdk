@@ -9,13 +9,7 @@ Wepin Native SDK for Android
 ```
 dependencies {
     implementation files('libs/wepin-widget-vX.X.X.aar')
-    implementation 'com.google.firebase:firebase-auth'    
-    implementation 'com.google.android.gms:play-services-auth:20.3.0'    
-    implementation platform('com.google.firebase:firebase-bom:31.0.2')    
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'    
-    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.8.1'    
-    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.8.1'    
-    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.9'        
 }
 ```
 
