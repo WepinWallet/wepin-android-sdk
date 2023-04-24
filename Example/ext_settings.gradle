@@ -1,0 +1,5 @@
+// keep that file in sync with ext_settings.gradle in the internal big repository
+ext {
+    projectRootDir = project.rootDir.getPath()
+    commonDebugKeystore = rootProject.file('debug.keystore')
+}

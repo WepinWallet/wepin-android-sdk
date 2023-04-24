@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">wepinExample</string>
+    <string name="item_initialize_show" >initialize_show</string>
+    <string name="item_initialize_hide" >initialize_hide</string>
+    <string name="item_is_initialized" >is_initialized</string>
+    <string name="item_open_widget" >open_widget</string>
+    <string name="item_close_widget" >close_widget</string>
+    <string name="item_get_accounts" >get_accounts</string>
+    <string name="item_finalize" >finalize_widget</string>
+</resources>
