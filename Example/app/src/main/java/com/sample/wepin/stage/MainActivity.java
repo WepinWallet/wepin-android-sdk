@@ -13,12 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
-import io.wepin.widget.types.Account;
-import io.wepin.widget.types.Wepin;
-import io.wepin.widget.types.WepinListener;
-import io.wepin.widget.types.WepinOptions;
-import io.wepin.widget.types.WidgetAttributes;
-import io.wepin.widget.utils.Trace;
+import io.wepin.widget.types.*;
 
 public class MainActivity extends AppCompatActivity implements WepinListener {
     private final String sLogTag = "wepinExample";
@@ -33,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements WepinListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Trace.d("Main_onCreate");
+        Log.d(sLogTag, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //
@@ -44,24 +39,24 @@ public class MainActivity extends AppCompatActivity implements WepinListener {
 
     @Override
     protected void onNewIntent(Intent intent) {
-        Trace.d("onNewIntent");
+        Log.d(sLogTag, "onNewIntent");
         super.onNewIntent(intent);
     }
 
     @Override
     protected void onPause() {
-        Trace.i("onPause");
+        Log.d(sLogTag, "onPause");
         super.onPause();
     }
 
     @Override
     protected void onResume() {
-        Trace.i("onResume");
+        Log.d(sLogTag, "onResume");
         super.onResume();
     }
 
     private void initView(){
-        Log.i(sLogTag, "initView");
+        Log.d(sLogTag, "initView");
 
         try {
             itemListView = findViewById(R.id.lv_menu);
@@ -157,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements WepinListener {
     @Override
     public void onWepinError(String errorMsg)
     {
-        Trace.d("onWepinError : " + errorMsg);
+        Log.d(sLogTag, "onWepinError : " + errorMsg);
         if( null != tvResult ){
             tvResult.setText("onWepinError : " + errorMsg);
         }
@@ -165,11 +160,11 @@ public class MainActivity extends AppCompatActivity implements WepinListener {
 
     @Override
     public void onAccountSet() {
-        Trace.d("onAccountSet");
+        Log.d(sLogTag, "onAccountSet");
         List<Account> accountList = _wepin.getAccounts();
         for( Account account : accountList ){
-            Trace.i("network : " + account.getNetwork());
-            Trace.i("address : " + account.getAddress());
+            Log.i(sLogTag, "network : " + account.getNetwork());
+            Log.i(sLogTag, "address : " + account.getAddress());
         }
     }
 }
