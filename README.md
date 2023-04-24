@@ -101,7 +101,7 @@ If this called, you can get accouts of wepin
  @Override
  public void onAccountSet() {
      Log.d(sLogTag, "onAccountSet");
-     List<Account> accountList = _wepin.getAccounts();
+     List<Account> accountList = wepin.getAccounts();
      for( Account account : accountList ){
          Log.i(sLogTag, "network : " + account.getNetwork());
          Log.i(sLogTag, "address : " + account.getAddress());
