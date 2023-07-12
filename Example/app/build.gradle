@@ -51,10 +51,11 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
 
     // # add wepin-widget-vX.X.X.aar file
-    implementation files('../../aar/wepin-widget-v0.0.6.aar')
+    implementation files('../../aar/wepin-widget-v0.0.7.aar')
     // #
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.browser:browser:1.2.0"
 }
