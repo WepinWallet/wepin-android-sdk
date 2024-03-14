@@ -51,7 +51,7 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
 
     // # add wepin-widget-vX.X.X.aar file
-    implementation files('../../aar/wepin-widget-v0.0.7.aar')
+    implementation files('../../aar/wepin-widget-v0.0.8.aar')
     // #
 
     testImplementation 'junit:junit:4.13.2'

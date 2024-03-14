@@ -32,9 +32,9 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!--For Deep Link => Urlscheme Format : packageName + .wepin-->
+                <!--For Deep Link => Urlscheme Format : wepin. + wepin app ID-->
                 <data
-                    android:scheme="com.sample.wepin.stage.wepin"
+                    android:scheme="wepin.WEPIN_APP_ID"
                     />
             </intent-filter>
         </activity>

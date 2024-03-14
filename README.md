@@ -24,7 +24,16 @@ Add the below line in your app's AndroidManifest.xml file
 ```
 
 ## :fast_forward: Configure Deep Link
-Deep Link scheme format : Your app package name + .wepin
+Deep link scheme format: 'wepin.' + Your wepin app id
+
+
+> ‼️ Notice of Change: Deep Link Scheme Value (From SDK Version 0.0.8-alpha) ‼️
+> For developers using SDK version 0.0.8 and above, please note that the structure of the Deep Link Scheme value has been updated.
+>
+> * Before: `pakage name` + '.wepin'
+> * After: 'wepin.' + `wepin appid`
+>
+> This change is essential for the proper functioning of the Wepin widget. Please ensure to apply the new scheme value for the correct operation of the Wepin widget.
 
 Add the below line in your app's AndroidManifest.xml file
 
@@ -36,9 +45,9 @@ Add the below line in your app's AndroidManifest.xml file
        <action android:name="android.intent.action.VIEW" />
        <category android:name="android.intent.category.DEFAULT" />
        <category android:name="android.intent.category.BROWSABLE" />
-       <!--For Deep Link => Urlscheme Format : packageName + .wepin-->
+       <!--For Deep Link => Urlscheme Format : 'wepin.' + app id of your wepin app -->
        <data
-           android:scheme="com.sample.wepin.stage.wepin"
+           android:scheme="wepin.WEPIN_APP_ID"
            />
    </intent-filter>
 </activity>
